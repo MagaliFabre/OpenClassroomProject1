@@ -1,175 +1,212 @@
- body,
- main {
-     background-color: rgb(138, 132, 167);
-     height: 100%;
+    /* Structure de la page  */
+    
+    body,
+    main {
+        background-color: rgb(138, 132, 167);
+        height: 100%;
 
- }
+    }
 
- html,
- body {
-     margin: 0;
-     height: 100%;
-     font-family: 'Roboto', sans-serif;
- }
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: aliceblue;
+    }
 
- header {
-     background-color: #1d2226;
- }
+    header {
+        background-color: #1d2226;
+    }
 
- nav {
-     display: flex;
-     justify-content: space-around;
- }
-
- a {
-     text-decoration: none;
-     color: #fff;
- }
-
- h4 {
-     display: flex;
-     justify-content: center;
-     font-weight: bold;
-     margin: 2rem;
- }
-
- h5 {
-     color: white;
-     font-weight: bold;
-     margin-left: 1rem;
-     font-size: large;
- }
-
- p {
-     margin-left: 2rem;
-     font-weight: bold;
- }
-
- .nav1,
- .nav2,
- .nav3 {
-     padding: 1rem;
-     width: 5rem;
-     text-align: center;
- }
-
- .nav1:hover {
-     background-color: rgb(92, 125, 153);
-
- }
-
- .nav2:hover {
-     background-color: rgb(92, 125, 153);
- }
-
- .nav3:hover {
-     background-color: rgb(92, 125, 153);
- }
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
 
 
- .container {
-     margin: 1rem;
-     height: 100%;
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 48% 48%;
-     grid-gap: 20px;
- }
 
- .box {
-     background-color: #1d2226;
-     display: flex;
-     border-radius: 4px;
-     padding: 1rem;
- }
+     /* Texte  */
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
 
- .une {
-     grid-column: 0 / 3;
-     grid-row: 1 / 2;
-     justify-content: center;
- }
+    h1{
+        justify-content: center;
+        color: rgb(138, 132, 167);
+    
+    }
+
+    h4 {
+        display: flex;
+        justify-content:center;
+        font-weight: bold;
+        font-size: x-large;
+        margin: 2rem;
+        color: rgb(178, 138, 241);
+    }
+
+    h5 {
+        color: rgb(181, 155, 226);
+        font-weight: bold;
+        margin-left: 1rem;
+        font-size:large;
+    }
+
+    p {
+        margin-left: 2rem;
+        font-weight: bold;
+        color: #fff;
+        font-style: italic;
+    }
+
+    /* Liste et barre de navigation */
+    
+    li {
+        color: #fff;
+    }
+
+    text {
+        color: beige;
+    }
+
+    .nav1,
+    .nav2,
+    .nav3 {
+        padding: 1rem;
+        flex-grow: 1;
+        text-align: center;
+        color: rgb(138, 132, 167);
+        font-size:xx-large;
+        font-weight: bold;
+    }
+
+    .nav1:hover {
+        background-color: rgb(12, 15, 17);
+
+    }
+
+    .nav2:hover {
+        background-color: rgb(12, 15, 17);
+    }
+
+    .nav3:hover {
+        background-color: rgb(12, 15, 17);
+    }
+
+    /* Structure CSS Grid  */
+    
+    .container {
+        margin: 1rem;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 48% 48%;
+        grid-gap: 20px;
+    }
+
+    .box {
+        background-color: #1d2226;
+        display: flex;
+        border-radius: 4px;
+        padding: 1rem;
+    }
+
+    .une {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-column: 0 / 3;
+        grid-row: 1 / 2;
+        justify-content: center;
+    }
 
 
- .deux {
-     grid-column: 0 / 3;
-     grid-row: 2 / 2;
- }
+    .deux {
+        grid-column: 0 / 3;
+        grid-row: 2 / 2;
+    }
 
- .trois {
-     grid-column: 2 / 2;
-     grid-row-start: 1;
-     grid-row-end: 3;
- }
-
-
- .lien-icone:hover {
-     opacity: 0.5;
- }
-
- .logo {
-     text-align: center;
-     padding: 1rem;
- }
-
- @media screen and (max-width: 800px) {
-     .html {
-         height: 100%;
-     }
-
-     .container {
-         display: grid;
-         grid-template-columns: 1fr;
-         margin: 1rem;
-         height: 100%;
-         display: grid;
-         grid-template-rows: 15% 15% 15% 15% 15%;
-         grid-gap: 5px;
-     }
-
-     .box {
-         background-color: #fff;
-         border-radius: 10px;
-         border: 3px solid black;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-
-     .une {
-         grid-column: 1;
-         grid-row-start: 0;
-         grid-row-end: 1;
-         background-color: bisque;
-     }
+    .trois {
+        grid-column: 2 / 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
 
 
-     .deux {
-         grid-column: 1;
-         grid-row-start: 2;
-         grid-row-end: 3;
-         background-color: bisque;
-     }
+    .lien-icone:hover {
+        opacity: 0.5;
+    }
 
-     .trois {
-         grid-column: 1;
-         grid-row-start: 3;
-         grid-row-end: 4;
-         background-color: bisque;
-     }
+    .logo {
+        text-align: center;
+        padding: 1rem;
+    }
 
-     .quatre {
-         grid-column: 1;
-         grid-row: 4 / 5;
-         background-color: bisque;
-     }
+    /* Responsive design */
 
-     .cinq {
-         grid-column: 1;
-         grid-row: 5 / 5;
-         background-color: bisque;
-     }
+    @media screen and (max-width: 800px) {
 
-     .lien-icone:hover {
-         opacity: 0.5;
-     }
- }
+        html {
+            height: 100%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 1rem;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 15% 15% 15% 15% 15%;
+            grid-gap: 5px;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 10px;
+            border: 3px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .une {
+            grid-column: 1;
+            grid-row-start: 0;
+            grid-row-end: 1;
+            background-color: bisque;
+        }
+
+
+        .deux {
+            grid-column: 1;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: bisque;
+        }
+
+        .trois {
+            grid-column: 1;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: bisque;
+        }
+
+        .quatre {
+            grid-column: 1;
+            grid-row: 4 / 5;
+            background-color: bisque;
+        }
+
+        .cinq {
+            grid-column: 1;
+            grid-row: 5 / 5;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .lien-icone:hover {
+            opacity: 0.5;
+        }
+    }
